@@ -13,6 +13,9 @@
 
     This friendly message is coming from:
     <ul>
+        <li>THIS IS GLOBAL DATA "{{ testing_data }}"</li>
+        <li>Current date {{ testing_date.now }}</li>
+        <li>Controller data {{ render(path('lucky_number_notify')) }}</li>
         <li>Price format {{ price|price_format(10) }}</li>
         <li>Lucky number {{ number }}</li>
         <li>Your controller at <code><a href="{{ '/home/sadig/Documents/PROJECTS/SYMFONY/symfony-testing/src/Controller/LuckyController.php'|file_link(0) }}">src/Controller/LuckyController.php</a></code></li>

@@ -12,9 +12,9 @@ use Symfony\Component\Routing\Annotation\Route;
 class LuckyController extends AbstractController
 {
     #[Route(path: ['en' => '/notify', 'ru' => '/notify1',], name: 'number_notify')]
-    public function numberAlert(): Response
+    public function numberNotify(): Response
     {
-        return new Response('notify number');
+        return new Response('notify number'.rand(0,1000));
     }
 
     #[Route('/test', name: 'test', priority: 1)]

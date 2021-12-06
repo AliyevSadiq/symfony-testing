@@ -1,5 +1,8 @@
 twig:
     default_path: '%kernel.project_dir%/templates'
+    globals:
+        testing_data: 'GLOBAL TESTING DATA'
+        testing_date: '@App\Generator\CurrentDateGenerator'
 
 when@test:
     twig:
